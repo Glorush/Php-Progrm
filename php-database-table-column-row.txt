@@ -1,0 +1,114 @@
+php ar moadhom program korta pari 
+data stor korar jono mysql/database management sysemt
+area database control //data inseart ,delet,update// korar jono  sql/query progimn languige lagba 
+
+****int dial prothoma 0 count korba na ex:pone number 017..***
+
+
+COMMAND-LINE 
+MYSQL FILE path a jita hoiva taro por 
+mysql -h localhost -u root -p enter  then
+password chaba enter then
+database a access hoba are por
+
+
+*** DATABASE SHOW KORA ***
+SHOW DATABASES;
+
+
+***DATABASE CREATE HOBA ***
+CREATE DATABASE database-name 
+	[---arpor enter diya abar ; dila database create hoba---]
+
+
+***QUERY EXIT KORAR***
+;
+
+
+***DATABASE AR VITORA DUKTA***
+USE dbname
+	[---use database-name dila sai database ar vitora duka hoya jay ---]
+
+
+
+
+
+		************** TABALE CREATE ****************
+
+***TABLE CREATE KORAR***
+CREATE TABLE table-name(
+	-> id int(22) not null auto_incrment,
+	-> name varcher(120) not null,
+	-> primary (id)); enter
+
+	[---  -> column-name type(int/varchar) value(21) not null; 
+	sob sasa primary key (id))---]
+
+
+***TABLE DELET KORTA ***
+DROP TABLE table-name;
+
+
+***TABLE RENAME KORTA***
+ALTER TABLE table-name RENAME TO new-table-name;
+
+
+***TABLE A DATA INSEART KORAR***
+INSERT INTO tablename(name, column name, column name,) VALUES('',''); 
+	[---table a data insert korara jono  INSERT INTO TABLE-NAME( column-name,column-name) VALUES('','');  ENTER--]
+
+
+***TABLE DAKHAR JONO ***
+SHOW TABLES;
+
+
+*** SOB DATA DAKHAR JONO***
+SELECT * FROM table-name;
+	[---data show korar jono select *(all) from database-name; diya data dakha jay---] 
+
+
+
+
+
+		************** TABALE COLUMN ****************
+
+***TABLE A  COLUMN ADD***
+ALTER TABLE table-name ADD FIRST/AFTER column-name column type;
+	[---if kono table ar AGA/PORA niata hoy tahola FIRSET/AFTER dita hba and 
+	column-name column-datatype dita hoba---]
+
+
+***TABLE A COLUMN DELET***
+ALTER TABLE table-name DROP column-name;
+	[---column delet korar jono drop column-name lagba--]
+
+
+***TABLE A VALUE ADD***
+INSERT INTO table-name (name, roll,age) VALUES('shanto', '200','33');
+
+
+
+***TABLE AR KONO ROW A MULTIPUL value ADD***
+INSERT INTO table-name (table-column-name,..,..) VALUES('value','value'),('value',value'),('','');
+	[---table a kono row ar multipul valu add korar jon ai sql korta hoy--]
+
+
+***TABLE AR ID SHOW KORAR ***
+SELECT * FORM tbname WHERE ID=..;
+	[---fiexd kono id ka dakhar jono  SELECT * FROM database-name WHERE ID=1;---]
+
+
+***TABLE AR NAME/PHONE SHOW KORAR***
+SELECT name/phone FROM tbname WHERE ID=;   
+	[--- table ar kon name/phone/age dakhar jon select ki dhabo(name/age/etc) from tbname where id=3;---]
+
+
+***TABLE VLUE UPDATE KORAR***
+UPDATE tble-name SET name/phone/etc="" WHERE ID=;
+	[--UPDATE kon table a update korta hoba table-name SET kotara hoba ki set hoba 
+	name/phone/age/etc="(value assien korta hoba") WHERE ID=(kon idta update hoba)ex:1/2/3;---]
+
+
+
+
+				
