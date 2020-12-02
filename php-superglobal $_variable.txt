@@ -1,0 +1,13 @@
+********************// VARIABLE //*******************
+
+***SUPER GLOBALS VARIABLE***
+1. $_GLOBALS
+2. $_SERVER
+3. $_GET
+4. $_POST
+5. $_FILES
+6. $_REQUEST
+7. $_COOKIE
+8. $_SESSION
+9. $_PHP_SELF
+10.$php_errormsg

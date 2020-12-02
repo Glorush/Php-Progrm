@@ -1,0 +1,38 @@
+1. Connection.php
+2. Header.php
+3. footer.php
+4. etc page link 
+
+****************// 1.CONNECTION.PHP //****************
+
+<?php
+   $dbhost = "localhost";
+   $dbname = "database-name";
+   $dbuser = "root";
+   $dbpassword = "";
+
+   try{
+	$pdo = new PDO("mysql:host={$dbhost};dbname={$dbname}",$dbuser,$dbpassword);
+	$pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+	// echo "connection success";
+
+   }
+   catch(PDOException $e){
+	echo " Connection error ".$e->getMessage();
+   }
+?>
+connection ka link korar jono
+<?php       
+ require_once("config.php");
+?>
+
+
+
+****************// 2. HEADER.PHP //****************
+
+HEADER include korar jono code
+<?php       
+   require_once("header.php");
+?>
+
+

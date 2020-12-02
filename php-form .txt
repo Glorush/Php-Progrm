@@ -1,0 +1,11 @@
+******************//  PHP FORM //********************
+
+*** PHP FORM ***
+<form action="" method="post/get">
+	[--- Php ta form tage a two addribute thaka action="kon pagea jaba"
+		method="get" a data addressbar a show hoy
+		method="post" a data  secure pase hoy ku dakta py na ---]
+
+
+*** PHP AR GET/POST AR DATA CASE ***
+	

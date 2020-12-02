@@ -1,0 +1,13 @@
+******************************* DISTINCT *******************************
+
+
+**************// DISTINCT //*****************
+
+SELECT DISTINCT column-name FROM table-name;
+	[--- kon value doubble thakala taka badh diya 1ta hoba ----]
+
+
+
+**************// COUNT //*****************
+SELECT COUNT(DISTINCT column) FROM table-name;
+	[--- koyta value aca ta count korba doubble thaka la akta dorba ---];

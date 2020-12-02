@@ -1,0 +1,16 @@
+
+*************************// FORM AR MADHOMA DATABASE A DATA INSEART //*************************  
+
+
+if(isset($_POST['st_register'])){
+
+  $name= $_POST['name'];  //USER INPUT DATA KA DORLAM
+  $roll= $_POST['roll'];
+  $email= $_POST['email'];
+
+	//PDO DATA INSERT QUERY 
+    $stm=$pdo->prepare("INSERT INTO students(Name,Roll,Email) VALUES(?,?,?)");
+    $stm->execute(array($name,$roll,$email));
+
+    $success="Student Registration successfull";
+}

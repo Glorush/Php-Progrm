@@ -1,0 +1,17 @@
+					
+*************************// FORM/TABLE AR MODHA ERROR MESSAGE SHOW //*************************
+
+		//ERROR MESSAGE
+                    	<?php if(isset($error)): ?>   	//JODI ERROR THAKA TAHOLA 
+                    	<div class="alert alert-danger">
+                    		<?php echo $error;?>
+                    	</div>
+                    	<?php endif;?>
+
+
+		//SUCCESS MESSAGE
+                    	<?php if(isset($success)): ?>    //JODI SUCCESS THAKA TAHOLA 
+                    	<div class="alert alert-success">
+                    		<?php echo $success; ?>
+                    	</div>
+                    	<?php endif; ?>

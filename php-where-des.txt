@@ -1,0 +1,6 @@
+*** WHERE ***
+WHERE MENING KOTHAY
+EXEMPLE: SELECT name FROM table-name WHERE ID=...;
+EXEMPLE: SELECT * FROM  table-name WHERE ID=....;
+
+

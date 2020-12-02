@@ -1,0 +1,16 @@
+					
+	*************************// FORM AR MODHA SAME NUMBAR/ID VALIDATION SYSTEM //*************************
+
+// query 
+  $stm=$pdo->prepare("SELECT Roll FROM students WHERE Roll=?");
+  $stm->execute(array($roll));
+  $roll_count =$stm->rowCount();
+
+//condition 
+  else if($roll_count == 1){
+    $error="Roll number already exits";
+  }
+
+//===================// ONE AR BASHI SAME ACA KI NA VALDATION CHECK KORTA FUNCTION UE KORBO //===================//
+
+

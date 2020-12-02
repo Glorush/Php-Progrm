@@ -38,8 +38,8 @@ USE dbname
 ***TABLE CREATE KORAR***
 CREATE TABLE table-name(
 	-> id int(22) not null auto_incrment,
-	-> name varcher(120) not null,
-	-> primary (id)); enter
+	-> name varchar(120) not null,
+	-> primary key (id)); enter
 
 	[---  -> column-name type(int/varchar) value(21) not null; 
 	sob sasa primary key (id))---]
@@ -50,7 +50,7 @@ DROP TABLE table-name;
 
 
 ***TABLE RENAME KORTA***
-ALTER TABLE table-name RENAME TO new-table-name;
+ALTER TABLE old-table-name RENAME TO new-table-name;
 
 
 ***TABLE A DATA INSEART KORAR***
@@ -73,7 +73,7 @@ SELECT * FROM table-name;
 		************** TABALE COLUMN ****************
 
 ***TABLE A  COLUMN ADD***
-ALTER TABLE table-name ADD FIRST/AFTER column-name column type;
+ALTER TABLE table-name ADD column-name column type FIRST/AFTER ;
 	[---if kono table ar AGA/PORA niata hoy tahola FIRSET/AFTER dita hba and 
 	column-name column-datatype dita hoba---]
 
@@ -81,6 +81,10 @@ ALTER TABLE table-name ADD FIRST/AFTER column-name column type;
 ***TABLE A COLUMN DELET***
 ALTER TABLE table-name DROP column-name;
 	[---column delet korar jono drop column-name lagba--]
+
+
+***TABLE A COLUMN NAME CHANGE***
+ALTER TABLE tabale-name CHANGE old-column-name new-column-name type(length);
 
 
 ***TABLE A VALUE ADD***
@@ -94,7 +98,8 @@ INSERT INTO table-name (table-column-name,..,..) VALUES('value','value'),('value
 
 
 ***TABLE AR ID SHOW KORAR ***
-SELECT * FORM tbname WHERE ID=..;
+SELECT * FROM tbname WHERE ID=..;
+select * from table-name where condition dita pari;
 	[---fiexd kono id ka dakhar jono  SELECT * FROM database-name WHERE ID=1;---]
 
 

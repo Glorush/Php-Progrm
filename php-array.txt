@@ -1,0 +1,97 @@
+******************// ARRAY //*******************
+
+***ARRAY***
+1. Numeric array
+2. Associative array
+3. Multidimensional array
+4. Sorting array
+
+
+
+*******  1.Numeric array  *******
+      <?php
+         /* First method to create array. */
+         $numbers = array( 1, 2, 3, 4, 5);
+         
+         foreach( $numbers as $value ) {
+            echo "Value is $value <br />";
+         }
+         
+         /* Second method to create array. */
+         $numbers[0] = "one";
+         $numbers[1] = "two";
+         $numbers[2] = "three";
+         $numbers[3] = "four";
+         $numbers[4] = "five";
+         
+         foreach( $numbers as $value ) {
+            echo "Value is $value <br />";
+         }
+      ?>
+      
+
+
+******* 2. Associative array  *******
+      <?php
+         /* First method to associate create array. */
+         $salaries = array("mohammad" => 2000, "qadir" => 1000, "zara" => 500);
+         
+         echo "Salary of mohammad is ". $salaries['mohammad'] . "<br />";
+
+         
+         /* Second method to create array. */
+         $salaries['mohammad'] = "high";
+         $salaries['qadir'] = "medium";
+         $salaries['zara'] = "low";
+         
+         echo "Salary of mohammad is ". $salaries['mohammad'] . "<br />";
+         echo "Salary of qadir is ".  $salaries['qadir']. "<br />";
+      ?>
+
+	[--- associative array key("mohammad") =>(array sin) 2000(value)
+
+
+
+******* 3. Multidimensional array  *******
+      <?php
+         $marks = array( 
+            "mohammad" => array (
+               "physics" => 35,
+               "maths" => 30,	
+               "chemistry" => 39
+            ),
+            
+            "qadir" => array (
+               "physics" => 30,
+               "maths" => 32,
+               "chemistry" => 29
+            ),
+            
+            "zara" => array (
+               "physics" => 31,
+               "maths" => 22,
+               "chemistry" => 39
+            )
+         );
+         
+         /* Accessing multi-dimensional array values */
+         echo "Marks for mohammad in physics : " ;
+         echo $marks['mohammad']['physics'] . "<br />"; 
+         
+         echo "Marks for qadir in maths : ";
+         echo $marks['qadir']['maths'] . "<br />"; 
+         
+         echo "Marks for zara in chemistry : " ;
+         echo $marks['zara']['chemistry'] . "<br />"; 
+      ?>
+
+
+
+******* 2. Sorting array  *******
+
+1. sort(variable); [--- ascending order ---]
+2. rsort();   [--- descending order ---]
+3. asort();   [--- associative array ascending value akara hoy ---]
+4. ksort();   [--- associative array ascending key akary hoy ---]
+5. arsort();  [--- associative array descending value akary hoy ---]
+6. krsort();  [--- associative array descending key akary hoy ---]

@@ -1,0 +1,47 @@
+****************************SAME TATABASE AR TWO TABLE JOIN SYSTEM****************************
+
+
+1.INNER JOIN
+2.LEFT JOIN
+3.RIGHT JOIN
+4.FULL OUTER JOIN
+
+
+************// INNER JOIN //************
+
+SELECT * FROM f-table-name INNER JOIN second-table-name ON f-table-name.id = s-table-name.st_id;
+	[--- SELECT * FROM first-table-name INNER JOIN second-table-name (kon tablear satha join hoba tar name) ON  
+	     first-table-name.(kon id/colulmn match korba) = second-table-name.(kon id/column match korba) ; ---]
+
+  NOTE: INNER JOIN MATICHING VALUES IN BOTH TABLES
+
+
+
+************// LEFT JOIN //************
+
+SELECT * FROM f-table-name LEFT JOIN second-table-name ON f-table-name.id = s-table-name.st_id;
+	[--- SAME ---]
+
+  NOTE: LEFT JOIN SHOW ALL VALUES IN LEFT TABLES AND RIGHT TABLES left-side, jagula thakba sgula print koraba na thakla null dakhaba
+
+
+
+
+************// RIGHT JOIN //************
+
+SELECT * FROM f-table-name RIGHT JOIN second-table-name ON f-table-name.id = s-table-name.st_id;
+	[--- SAME ---]
+
+  NOTE:RIGHT JOIN SHOW ALL VALUES IN RIGHT TABLES AND LEFT TABLES right side, jagula match korba sgula print koraba na thakla null dakhaba
+
+
+
+
+	*********A CARO TABLE NAME DECELER KORA KORA JAY*******
+EX: SELECT * FROM student t1 JOIN marks t2 ON t1.id = t2.st_id ;
+
+
+ACRO AMAR CONDITION DIYA KORTA PARI
+EX: SELECT * FROM student t1 JOIN marks t2 ON t1.id = t2.st_id ORDER BY t1.age asc/desc;
+EX: SELECT * FROM student t1 JOIN marks t2 ON t1.id = t2.st_id WHERE t2.id=3;
+ 

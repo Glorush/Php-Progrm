@@ -1,0 +1,27 @@
+**********************// PHP AGGREGATE //*********************
+
+1.MIN()
+2.MAX()
+3.SUM()
+4.COUNT()
+5.AVG()
+
+SELECT function-name(column-name) FROM table-name;
+exe:SELECT MIN(age) FROM student;
+
+
+
+***********************// ORDER BY  //***********************
+SELECT * FROM student ORDER BY ID DESC;
+**DEFULT vaba ASCENDIANG DOYA THAKA**
+
+
+
+***********************// LIKE/SEARCH/CHARA  //***********************
+select * from table-name where fild-name LIKE 'a%/%a/%a%';
+SELECT * FROM student WHERE Name LIKE 'a%';
+
+	[--- a% first letter 
+	     %a last letter
+	     %a% fiend full word ---]
+

@@ -1,0 +1,17 @@
+1. Comment 
+2. Variable
+3. Constant : Define{ 3 parametter 'name', 'value'}
+4. Echo/Print 
+5. Operators
+6. If, elseif, else
+7. Switch
+9. Loop
+10: array {array ki na check korar jono (is_array($variable)) dia check kora hoy}
+11: function{
+	function food(){
+		   #code......
+		  } //function diclaration
+	food()//function call
+	//function value pase  **function diclear a function a paramitter hoba function call a paramitter ar valu hoba**
+	//variable bira dicler korla ba vitora dicler korla takea into/out a use korar jono global 
+	}

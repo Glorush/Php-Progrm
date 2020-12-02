@@ -1,0 +1,68 @@
+************************// LOOP TYPE //**************************
+
+*** LOOP TYPE ***
+1.  FOR LOOPS
+2.  WHILE 
+3.  DO...WHILE
+4.  FOREACH LOOPS
+
+
+**********FRO LOOPS**********
+for (initialization; condition; increment){
+   code to be executed;
+}
+	[--- prodhoma i=2; i>=5; i++  initialize korta hoba condition dita hoba increment/dicrement korta hoba ---]
+
+
+
+**********WHILE LOOPS**********
+while (condition) {
+   increment ;
+   echo:;
+}
+	[---prothoma variable $i=3; while (conditon i<=5){ i-- ; echo $i;---}
+
+
+
+**********DO WHILE LOOPS**********
+do {
+   code to be executed;
+}
+while (condition);
+	[---prothoma akbar print kora conditin check korba tarpor contition thik hoila abar loop chalba---]
+
+
+**********FOREACH LOOPS**********
+foreach (array as value) {
+   code to be executed;
+}
+exemple:<?php
+         $array = array( 1, 2, 3, 4, 5);
+         
+         foreach( $array as $value ) {
+            echo "Value is $value <br />";
+         }
+      ?>
+
+
+
+************CONTINUE/BREAK************
+BREAK/CONTINUE statment kon lopka condition sapakhy chlata thaka ba thamia day and poroboty loop calu kora 
+
+***continue:<?php
+         $array = array( 1, 2, 3, 4, 5);
+         
+         foreach( $array as $value ) {
+            if( $value == 3 )continue;
+            echo "Value is $value <br />";
+         }
+      ?>
+***break:<?php
+         $i = 0;
+         
+         while( $i < 10) {
+            $i++;
+            if( $i == 3 )break;
+         }
+         echo ("Loop stopped at i = $i" );
+      ?>
